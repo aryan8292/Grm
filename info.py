@@ -22,7 +22,7 @@ query_limit = 10
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
+API_ID = 1881742
 API_HASH = "9302cd0cff1e2aa81379d95aeba7f27b"
 BOT_TOKEN = "5742148661:AAFmeWtYfXYWOtl3k4EQuUz4VsNzzVtrPU4"
 
