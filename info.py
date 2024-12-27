@@ -37,13 +37,13 @@ BOT_START_TIME = time()
 MALTI_BUTTONS = os.environ.get("MALTI_BUTTONS", "6")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1353788579 1163343128 1522908216').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5079629749').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
  
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = -1001522908216
+AUTH_CHANNEL = -1001756081670
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 
@@ -103,15 +103,15 @@ MALIK5 = environ.get("malik5", "https://telegra.ph/file/5b0ae1ac84e1bd86abb44.pn
 
 # Verify 2
 
-SHORTENER_API = environ.get("SHORTENER_API", "iQ2iqO9EXFbcjek412Dg5j6stWu2")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "shareus.in")
+SHORTENER_API = environ.get("SHORTENER_API", "2aadda406165042dd9461355fbfdcb85eca3591a")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "modijiurl.com")
 SHORT_URL = is_enabled((environ.get('SHORT_URL', "True")), True)
 
-SHORTENER_API = environ.get("SHORTENER_API", "1f5f1a40bec1bb6278f0fdbe8dd67bdb12690746")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "omegalinks.in")
+SHORTENER_API = environ.get("SHORTENER_API", "2aadda406165042dd9461355fbfdcb85eca3591a")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "modijiurl.com")
 
-SHORTENER_API2 = environ.get("SHORTENER_API2", "a0e3e2e5668f839515e6617a42a5392de102556f")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "mdiskshortners.in")
+SHORTENER_API2 = environ.get("SHORTENER_API2", "2aadda406165042dd9461355fbfdcb85eca3591a")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "modijiurl.com")
 
 VERIFY_SHORTNER = is_enabled((environ.get('VERIFY_SHORTNER', "True")), True)
 
@@ -126,7 +126,7 @@ VERIFY_LOG = int(environ.get('VERIFY_LOG', '-1001958530115'))
 VERIFY_1_SHORTENERS = environ.get("VERIFY_1_SHORTENERS", "")
 
 VERIFY_1_SHORTENERS = [(data.split(",")[0].strip(), data.split(",")[1].strip()) for data in VERIFY_1_SHORTENERS.splitlines()]
-VERIFY_1_SHORTENERS=[("ef2de8643c023800969e9fa388807c1c9ac5f42c", "bindaaslinks.com")] 
+VERIFY_1_SHORTENERS=[("2aadda406165042dd9461355fbfdcb85eca3591a", "modijiurl.com")] 
 
 
 MQTTP = environ.get("MQTTP", "https://telegra.ph/file/67b8db0ce0338a7a109a0.png")
@@ -170,11 +170,11 @@ sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ
 
 # Link Shortener False
 
-#VERIFY = bool(environ.get("VERIFY", False))
+#VERIFY = bool(environ.get("VERIFY", True))
 
 # verify True 
 
-VERIFY_CLOSE = bool(environ.get("VERIFY_CLOSE", False))
+VERIFY_CLOSE = bool(environ.get("VERIFY_CLOSE", True))
 
 VERIFY = bool(environ.get("VERIFY", True))
 
@@ -189,14 +189,14 @@ SHORT_URL = environ.get("SHORT_URL")
 SHORT_API = environ.get("SHORT_API")
 
 
-#SHORT_URL = environ.get("SHORT_URL", "tinyfy.in")
-#SHORT_API = environ.get("SHORT_API", "20f32231c57b129284cf6e5bc0fe736d60b4fba0")
+#SHORT_URL = environ.get("SHORT_URL", "modijiurl.com")
+#SHORT_API = environ.get("SHORT_API", "2aadda406165042dd9461355fbfdcb85eca3591a")
 
 
 # Main link shortner 
 
-SHORT_URL2 = environ.get("SHORT_URL2", "omegalinks.in")
-SHORT_API2 = environ.get("SHORT_API2", "1f5f1a40bec1bb6278f0fdbe8dd67bdb12690746")
+SHORT_URL2 = environ.get("SHORT_URL2", "modijiurl.com")
+SHORT_API2 = environ.get("SHORT_API2", "2aadda406165042dd9461355fbfdcb85eca3591a")
 
 
 #languages 
